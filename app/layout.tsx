@@ -1,12 +1,10 @@
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      ici c paris
-      <body>{children}</body>
-    </html>
-  );
-}
+import '@/app/ui/global.css';
+import React, { PropsWithChildren } from 'react';
+
+const RootLayout = ({ children }: PropsWithChildren) => (
+  <html lang="en">
+    <body>{children}</body>
+  </html>
+);
+
+export default RootLayout;
